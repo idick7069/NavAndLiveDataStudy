@@ -44,6 +44,7 @@ class StartFragment : Fragment() {
     ): View? {
         val fragmentBinding = FragmentStartBinding.inflate(inflater, container, false)
         binding = fragmentBinding
+        binding?.startFragment = this
         return fragmentBinding.root
     }
 
